@@ -1,5 +1,5 @@
 [package]
-name = "daniel-online-resume"
+name = "Rust_Wasm_Game_of_Life"
 version = "0.1.0"
 authors = ["ace20 <daniel.e.coats@gmail.com>"]
 edition = "2018"
