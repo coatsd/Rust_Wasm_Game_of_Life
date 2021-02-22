@@ -1,5 +1,5 @@
-import { Universe, Glider } from "daniel-online-resume";
-import { memory } from "daniel-online-resume/daniel_online_resume_bg";
+import { Universe, Glider } from "rust-wasm-game-of-life-coatsd";
+import { memory } from "rust-wasm-game-of-life-coatsd/rust_wasm_game_of_life_coatsd_bg";
 
 const CELL_SIZE = 5;
 const GRID_COLOR = "#CCCCCC";
@@ -114,6 +114,7 @@ $(document).keydown((e) => {
 	if (e.which == "50") gliderBox.value = 1;
 	if (e.which == "51") gliderBox.value = 2;
 	if (e.which == "52") gliderBox.value = 3;
+	if (e.which == "80") (isPaused()) ? play() : pause();
 });
 
 canvas.addEventListener('click', e => {
